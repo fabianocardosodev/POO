@@ -23,4 +23,7 @@ class Funcionario {
         $this->valorDaHora = $valor;
     }
 
+    public function getSalarioEfetivo() {
+        return $this->salarioBase + ( $this->horasExtras * $this->valorDaHora);
+    }
 }
